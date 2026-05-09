@@ -52,6 +52,8 @@ function sdkKey(npm: string): string | undefined {
       // "openai-compatible" key emits a deprecation warning at runtime, so we
       // pick the camelCase form the SDK now treats as canonical.
       return "openaiCompatible"
+    case "@ai-sdk/openai-compatible":
+      return "openaiCompatible"
   }
   return undefined
 }
