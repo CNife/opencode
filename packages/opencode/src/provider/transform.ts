@@ -632,16 +632,9 @@ export function variants(model: Provider.Model): Record<string, Record<string, a
   const id = model.id.toLowerCase()
   const adaptiveEfforts = anthropicAdaptiveEfforts(model.api.id)
   if (
-    id.includes("deepseek-chat") ||
-    id.includes("deepseek-reasoner") ||
-    id.includes("deepseek-r1") ||
-    id.includes("deepseek-v3") ||
-    id.includes("minimax") ||
-    id.includes("glm") ||
     id.includes("kimi") ||
     id.includes("k2p") ||
-    id.includes("qwen") ||
-    id.includes("big-pickle")
+    id.includes("qwen")
   )
     return {}
 
